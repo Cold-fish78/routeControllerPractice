@@ -5,11 +5,11 @@ const userSchema = mongoose.Schema({
         unique: true,
         required: true
     },
-    username: {
+    password: {
         type: String,
         required: true
     },
-    password: {
+    name : {
         type: String,
         required: true
 
@@ -18,5 +18,5 @@ const userSchema = mongoose.Schema({
     {
         timestamps: true
     });
-    const User = mongoose.model('User',userSchema);
-    module.exports = User;
+const User = mongoose.model('User', userSchema);
+module.exports = User;
